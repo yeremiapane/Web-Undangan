@@ -372,6 +372,12 @@ body {
   }
 }
 
+.effect1 .list .fa-solid, .fas{
+  font-size: 3rem;
+  color : coral;
+  padding : 50px 10px;
+}
+
 @media (max-width: 450px) {
   #checkeffect1 {
     position: relative;
