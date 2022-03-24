@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twelve Tamplate</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="overclosed">
+    <audio autoplay loop id="audio">
+        <source src="musik/Sunset.mp3" type="audio/mp3">
+    </audio>
+    
+    <div class="cover">
+        <div class="container">
+            <img src="img/flower.png" alt="">
+            <h1>Hello, Are Getting Married</h1>
+            <p>- Save the date of our wedding. -</p>
+            <button id="bukaUndangan" onclick="toggleplay()">Buka Undagan</button>
+        </div>
+    </div>
+
+    <div class="home" id="home">
+        <div class="container">
+            <p>We Are Getting Married</p>
+            <h1>Romeo & Juliet</h1>
+            <h3>13 February 2022</h3>
+            <h5>Kepada Yth Bapak/Ibu/Saudara/i</h5>
+            <h3>Prof. Supardi MM</h3>
+            <p>di Yogyakarta</p>
+
+        </div>
+    </div>
+    <div class="story makstop">
+        <div class="info-prokes">
+            <div class="head">
+                <h1>Informasi</h1>
+                <h4>Protokol Covid-19</h4>
+                <p>Dalam upaya mengurangi penyebaran Covid 19 pada masa pandemi, kami harapkan kedatangan para tamu undangan agar menjalankan protokol yang berlaku.</p>
+            </div>
+            <section>
+                <div>
+                    <img src="img/masker.png" alt="">
+                    <p>Wajib Menggunakan Masker</p>
+                </div>
+                <div>
+                    <img src="img/distance.png" alt="">
+                    <p>Saling Menjaga Jarak di Dalam Acara</p>
+                </div>
+                <div>
+                    <img src="img/salam.png" alt="">
+                    <p>Menggunakan salam namastee sebagai ganti berjabat tangan</p>
+                </div>
+                <div>
+                    <img src="img/wash.png" alt="">
+                    <p>Jaga Kebersihan dengan Mencuci Tangan atau Handsanitizer</p>
+                </div>
+            </section>
+        </div>
+        <div class="container" id="story">
+            <img src="img/flower2.png" alt="">
+            <h1>Our Love Story</h1>
+            <div class="slider">
+
+                <div class="owl-carousel owl-theme">
+
+                    <div class="img_poster item">
+                        <div class="title">
+                            <h2>Pertama Kenal</h2>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p><strong>1 Januari 2022</strong> - gramedia</p>
+                    </div>
+                    <div class="img_poster item">
+                        <div class="title">
+                            <h2>Mengatakan Cinta</h2>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p><strong>1 Februari 2022</strong> - Pantai</p>
+                    </div>
+                    <div class="img_poster item">
+                        <div class="title">
+                            <h2>Tunangan</h2>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p><strong>1 Maret 2022</strong> - Rumah Juliet</p>
+                    </div>
+
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script>
+                    $('.owl-carousel').owlCarousel({
+                        loop: false,
+                        margin: 15,
+                        nav: false,
+                        autoplay: false,
+                        autoplayTimeout: 3000,
+                        stagePadding: 0,
+                        dots: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            600: {
+                                items: 1
+                            },
+                            800: {
+                                items: 1
+                            },
+                            1000: {
+                                items: 1
+                            },
+                            1200: {
+                                items: 1
+                            }
+                        }
+                    })
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="couple makstop2" id="couple">
+        <div class="head">
+            <div class="title">
+                <img src="img/daun-left.png" alt="">
+                <h1>Groom & Bride</h1>
+                <img src="img/daun-right.png" alt="">
+            </div>
+            <section>
+                <p class="text1">Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+                <p class="text2">Maha suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
+            </section>
+        </div>
+
+        <div class="profil">
+            <div class="man">
+                <img src="img/man.png" alt="">
+                <h1>- Romeo -</h1>
+                <h2>Romeo Montaque</h2>
+                <p>Putra dari Pasangan</p>
+                <p><strong>Bambang & Mulyani</strong></p>
+                <p>Jl. Majapahit, No 43, Sleman, Yogyakarta</p>
+            </div>
+            <div class="woman">
+                <img src="img/woman.png" alt="">
+                <h1>- Juliet -</h1>
+                <h2>Juliet Capulet</h2>
+                <p>Putri dari Pasangan</p>
+                <p><strong>Joko & Siti</strong></p>
+                <p>Jl. Apel 15C, Condongcatur, Sleman, Yogyakarta</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="event makstop" id="event">
+        <img src="img/flower2.png" alt="">
+        <div class="boxEvent">
+            <section class="satu">
+                <h1>Akad Nikah</h1>
+                <p><strong>Saturday, 12 February 2022 08:00 - 09:00 WIB</strong></p>
+                <p><strong>Masjid Kampus UGM</strong></p>
+                <p>Jl. Prof. DR. Drs Notonagoro, Karang Malang, Caturtunggal, Kec. Depok, Kabupaten Sleman, Yogyakarta</p>
+            </section>
+            <section class="dua">
+                <h1>Resepsi</h1>
+                <p><strong>Sunday, 13 February 2022 09:00 - 12:00 WIB</strong></p>
+                <p><strong>Jogja Expo Center</strong></p>
+                <p>Jl. Wonocatur, Wonocatur, Banguntapan, Kec. Banguntapan, Bantul, Yogyakarta</p>
+            </section>
+            <section class="tiga">
+                <h1>Unduh Mantu</h1>
+                <p><strong>Saturday, 20 February 2021 09:00 - Selesai</strong></p>
+                <p><strong>Rumah Bapak Bambang</strong></p>
+                <p>Gowongan, Jetis, Yogyakarta City, Special Region of Yogyakarta</p>
+            </section>
+
+        </div>
+        <div class="time">
+            <section>
+                <h1>0</h1>
+                <p>Hari</p>
+            </section>
+            <section>
+                <h1>0</h1>
+                <p>Jam</p>
+            </section>
+            <section>
+                <h1>0</h1>
+                <p>Menit</p>
+            </section>
+            <section>
+                <h1>0</h1>
+                <p>Detik</p>
+            </section>
+        </div>
+        <div class="maps">
+            <button><a href="">Open Google Maps</a></button>
+        </div>
+
+    </div>
+    <div class="gallery makstop2" id="gallery">
+        <div class="head">
+            <img src="img/daun-left.png" alt="">
+            <h1>Our Galery</h1>
+            <img src="img/daun-right.png" alt="">
+        </div>
+        <div class="pict">
+            <section >
+                <img src="img/Prewedding1.jpg" alt="">
+            </section>
+            <section >
+                <img src="img/Prewedding2.jpg" alt="">
+            </section>
+            <section >
+                <img src="img/Prewedding3.jpg" alt="">
+            </section>
+            <section >
+                <img src="img/Prewedding4.jpg" alt="">
+            </section>
+            <section >
+                <img src="img/Prewedding1.jpg" alt="">
+            </section>
+            <section >
+                <img src="img/Prewedding2.jpg" alt="">
+            </section>
+            <section >
+                <img src="img/Prewedding3.jpg" alt="">
+            </section>
+            <section >
+                <img src="img/Prewedding4.jpg" alt="">
+            </section>
+        </div>
+        <div class="video">
+            <h1>Our Video</h1>
+            <div class="embed">
+                <embed src="https://www.youtube.com/embed/Q-rGIR3DdNk" type="video/webm">
+            </div>
+        </div>
+    </div>
+    <div class="quote makstop">
+        <img src="img/flower2.png" alt="">
+        <p>"Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai di banding pernikahan."</p>
+        <h3>HR. Ibnu Majah</h3>
+    </div>
+    <div class="guest-book" id="guest-book">
+        <img src="img/flower.png" alt="">
+        <h1>Gues Book</h1>
+        <div class="send">
+            <form action="" method="post">
+                <section>
+                    <label for="namaTamu">Nama</label>
+                    <input type="text" name="" id="namaTamu" value="Prof. Supardi MM" readonly autocomplete="off">
+                </section>
+                <section>
+                    <label for="keterangan">Keterangan</label>
+                    <select name="" id="keterangan">
+                        <option value="">Hadir</option>
+                        <option value="">Tidak Hadir</option>
+                    </select>
+                </section>
+                <section>
+                    <label for="pesan">Pesan/Doa</label>
+                    <textarea name="" id="pesan" cols="30" rows="10"></textarea>
+                </section>
+                <button>Kirim</button>
+            </form>
+        </div>
+        <div class="result">
+            <section>
+                <p class="nama">Syahrul Ansyari</p>
+                <p class="waktu">08 March 2021 17:03</p>
+                <p class="pesan">Selamat ma broo, akhirnya menikah juga. Semoga menjadi keluarga yang sakinah, mawadah, warahmah. Aamiin.</p>
+            </section>
+            <section>
+                <p class="nama">Syahrul Ansyari</p>
+                <p class="waktu">08 March 2021 17:03</p>
+                <p class="pesan">Selamat ma broo, akhirnya menikah juga. Semoga menjadi keluarga yang sakinah, mawadah, warahmah. Aamiin.</p>
+            </section>
+            <section>
+                <p class="nama">Syahrul Ansyari</p>
+                <p class="waktu">08 March 2021 17:03</p>
+                <p class="pesan">Selamat ma broo, akhirnya menikah juga. Semoga menjadi keluarga yang sakinah, mawadah, warahmah. Aamiin.</p>
+            </section>
+            <section>
+                <p class="nama">Syahrul Ansyari</p>
+                <p class="waktu">08 March 2021 17:03</p>
+                <p class="pesan">Selamat ma broo, akhirnya menikah juga. Semoga menjadi keluarga yang sakinah, mawadah, warahmah. Aamiin.</p>
+            </section>
+            <section>
+                <p class="nama">Syahrul Ansyari</p>
+                <p class="waktu">08 March 2021 17:03</p>
+                <p class="pesan">Selamat ma broo, akhirnya menikah juga. Semoga menjadi keluarga yang sakinah, mawadah, warahmah. Aamiin.</p>
+            </section>
+            <section>
+                <p class="nama">Syahrul Ansyari</p>
+                <p class="waktu">08 March 2021 17:03</p>
+                <p class="pesan">Selamat ma broo, akhirnya menikah juga. Semoga menjadi keluarga yang sakinah, mawadah, warahmah. Aamiin.</p>
+            </section>
+            <section>
+                <p class="nama">Syahrul Ansyari</p>
+                <p class="waktu">08 March 2021 17:03</p>
+                <p class="pesan">Selamat ma broo, akhirnya menikah juga. Semoga menjadi keluarga yang sakinah, mawadah, warahmah. Aamiin.</p>
+            </section>
+            <section>
+                <p class="nama">Syahrul Ansyari</p>
+                <p class="waktu">08 March 2021 17:03</p>
+                <p class="pesan">Selamat ma broo, akhirnya menikah juga. Semoga menjadi keluarga yang sakinah, mawadah, warahmah. Aamiin.</p>
+            </section>
+            <section>
+                <p class="nama">Syahrul Ansyari</p>
+                <p class="waktu">08 March 2021 17:03</p>
+                <p class="pesan">Selamat ma broo, akhirnya menikah juga. Semoga menjadi keluarga yang sakinah, mawadah, warahmah. Aamiin.</p>
+            </section>
+        </div>
+    </div>
+    <div class="popUpHadiah hiddenPopUp">
+        <section>
+            <div  class="head">
+                 <h1>Kirim Hadiah</h1>
+                 <p onclick="popUpHadiah()"><strong>x</strong></p>
+            </div>
+        </section>
+    </div>
+    <div class="buttonTopNav">
+        <div class="button">
+            <button id="playpause" onclick="toggleplay()">Play &#9658</button>
+            <button id="hadiah" onclick="popUpHadiah()">Kirim Hadiah</button>
+        </div>
+    </div>
+    <div class="navBottom">
+        <div class="nav-item">
+            <a href="#home" class="Navhome">
+                <h3>Home</h3>
+            </a>
+            <a href="#story" class="Navstory">
+                <h3>Story</h3>
+            </a>
+            <a href="#couple" class="Navcouple">
+                <h3>Couple</h3>
+            </a>
+            <a href="#event" class="Navevent">
+                <h3>Event</h3>
+            </a>
+            <a href="#gallery" class="Navgallery">
+                <h3>Gallery</h3>
+            </a>
+            <a href="#guest-book" class="Navguest-book">
+                <h3>Guest Book</h3>
+            </a>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll',animation);
+        let WindowHeight = window.innerHeight;
+
+        
+
+        let audio = document.getElementById('audio');
+        let buttonplaypause = document.getElementById('playpause');
+        let count = 0;
+        function toggleplay(){
+            if (count ==0){
+                count=1;
+                audio.play();
+                buttonplaypause.innerHTML = "Stop &#9611";
+            }
+            else{
+                count=0;
+                audio.pause();
+                buttonplaypause.innerHTML = "Play &#9658";
+            }
+        }
+
+        // COVER
+        let body = document.querySelector('body');
+        let cover = document.querySelector('.cover');
+        let coverbutton = document.querySelector('.cover .container button');
+        coverbutton.addEventListener('click',function(){
+            cover.style.top = '110vh';
+            cover.style.opacyti = '0';
+            cover.style.zIndex = '-1';
+            body.classList.remove('overclosed');
+        })
+        
+
+        function animation(){
+            
+            // STORY
+            let slider = document.querySelector('.story .container .slider');
+            let jarakSlider = slider.getBoundingClientRect().top;
+
+            if(jarakSlider < WindowHeight){
+                slider.style.top='0';
+            }
+            else{
+                slider.style.top='100px'
+            }
+
+            // COUPLE
+            let titleCouple = document.querySelector('.couple .head .title');
+            let jarakTitleCouple = titleCouple.getBoundingClientRect().top;
+
+            if(jarakTitleCouple < WindowHeight){
+                titleCouple.style.top='0';
+                titleCouple.style.opacity='1';
+            }
+            else{
+                titleCouple.style.top='100px';
+                titleCouple.style.opacity='0';
+            }
+
+
+            let textCouple1 = document.querySelector('.couple .head section .text1');
+            let textCouple2 = document.querySelector('.couple .head section .text2');
+            
+            let jarakTextCouple1 = textCouple1.getBoundingClientRect().top;
+            let jarakTextCouple2 = textCouple2.getBoundingClientRect().top;
+
+            if(jarakTextCouple1 < WindowHeight){
+                textCouple1.style.top='0';
+                textCouple1.style.opacity='1';
+            }
+            else{
+                textCouple1.style.top='100px';
+                textCouple1.style.opacity='0';
+            }
+            if(jarakTextCouple2 < WindowHeight){
+                textCouple2.style.top='0';
+                textCouple2.style.opacity='1';
+            }
+            else{
+                textCouple2.style.top='100px';
+                textCouple1.style.opacity='0';
+            }
+
+            let manCouple = document.querySelector('.couple .profil .man');
+            let womanCouple = document.querySelector('.couple .profil .woman');
+
+            let jarakManCouple = manCouple.getBoundingClientRect().top;
+            let jarakWomanCouple = womanCouple.getBoundingClientRect().top;
+
+            if(jarakManCouple < WindowHeight/2){
+                manCouple.style.top='0';
+                manCouple.style.left='0';
+                manCouple.style.opacity='1';
+            }
+            else if(jarakManCouple > (WindowHeight/2)+200){
+                manCouple.style.top='-100px';
+                manCouple.style.left='-250px';
+                manCouple.style.opacity='0';
+            }
+            if(jarakWomanCouple < WindowHeight/2){
+                womanCouple.style.top='0';
+                womanCouple.style.right='0';
+                womanCouple.style.opacity='1';
+            }
+            else if(jarakWomanCouple > (WindowHeight/2)+200){
+                womanCouple.style.top='-100px';
+                womanCouple.style.right='-250px';
+                womanCouple.style.opacity='0';
+            }
+
+            // EVENT
+            let eventBoxSatu = document.querySelector('.event .boxEvent .satu');
+            let eventBoxDua = document.querySelector('.event .boxEvent .dua');
+            let eventBoxTiga = document.querySelector('.event .boxEvent .tiga');
+
+            let JarakEventBoxSatu = eventBoxSatu.getBoundingClientRect().top;
+            let JarakEventBoxDua = eventBoxDua.getBoundingClientRect().top;
+            let JarakEventBoxTiga = eventBoxTiga.getBoundingClientRect().top;
+
+            if(JarakEventBoxSatu < WindowHeight-50){
+                eventBoxSatu.style.top='0';
+                eventBoxSatu.style.opacity='1';
+            }
+            else{
+                eventBoxSatu.style.top='100px';
+                eventBoxSatu.style.opacity='0';
+            }
+            if(JarakEventBoxDua < WindowHeight-50){
+                eventBoxDua.style.top='0';
+                eventBoxDua.style.opacity='1';
+            }
+            else{
+                eventBoxDua.style.top='100px';
+                eventBoxDua.style.opacity='0';
+            }
+            if(JarakEventBoxTiga < WindowHeight-50){
+                eventBoxTiga.style.top='0';
+                eventBoxTiga.style.opacity='1';
+            }
+            else{
+                eventBoxTiga.style.top='100px';
+                eventBoxTiga.style.opacity='0';
+            }
+
+            let containerTime = document.querySelector('.event .time');
+            let JarakContainerTime = containerTime.getBoundingClientRect().top;
+
+            if(JarakContainerTime < WindowHeight - 200){
+                containerTime.style.width = '100%';
+                containerTime.style.opacity = '1';
+                containerTime.style.justifyContent = 'center';
+            }
+            else if(JarakContainerTime > WindowHeight + 100){
+                containerTime.style.width = '50px';
+                containerTime.style.opacity = '0';
+                containerTime.style.justifyContent = 'left';
+            }
+            // GALLERY      
+            let imgGallery = document.querySelectorAll('.gallery .pict section img');
+            let countDelayTrantition = 0.2;
+            imgGallery.forEach(function(e){
+                e.style.transitionDelay = countDelayTrantition+'s';
+                if(countDelayTrantition==0.8){
+                    countDelayTrantition=0;
+                }
+                countDelayTrantition+=0.2;
+            });
+            imgGallery.forEach(function(e){
+                window.addEventListener('scroll',function(){
+                    let JarakImgGallery = e.getBoundingClientRect().top;
+                    if(JarakImgGallery < WindowHeight-200){
+                        e.style.transform='scale(1)';
+                        e.style.opacity='1';
+                    }
+                    else if(JarakImgGallery > WindowHeight*1.5){
+                        e.style.transform='scale(0.6)';
+                        e.style.opacity='0';
+                    }
+                })
+            });
+
+            // NAV BOTTOM
+
+            // let idGuestBook = document.getElementById('guest-book');
+            // let idGallery = document.getElementById('gallery');
+            // let idEvent = document.getElementById('event');
+            // let idCouple = document.getElementById('couple');
+            // let idStory = document.getElementById('story');
+            // let idHome = document.getElementById('home');
+
+            let guestBook = document.querySelector('.navBottom .nav-item .Navguest-book');
+            let gallery = document.querySelector('.navBottom .nav-item .Navgallery');
+            let event = document.querySelector('.navBottom .nav-item .Navevent');
+            let couple = document.querySelector('.navBottom .nav-item .Navcouple');
+            let story = document.querySelector('.navBottom .nav-item .Navstory');
+            let home = document.querySelector('.navBottom .nav-item .Navhome');
+
+            let jarakIdGuestBook = (document.getElementById('guest-book')).getBoundingClientRect().top;
+            let jarakIdGalery = (document.getElementById('gallery')).getBoundingClientRect().top;
+            let jarakIdEvent = (document.getElementById('event')).getBoundingClientRect().top;
+            let jarakIdCouple = (document.getElementById('couple')).getBoundingClientRect().top;
+            let jarakIdStory = (document.getElementById('story')).getBoundingClientRect().top;
+            let jarakIdHome = (document.getElementById('home')).getBoundingClientRect().top;
+
+            if(jarakIdGuestBook < WindowHeight - 200){
+                guestBook.classList.add('navNow');
+                gallery.classList.remove('navNow');
+                event.classList.remove('navNow');
+                couple.classList.remove('navNow');
+                story.classList.remove('navNow');
+                home.classList.remove('navNow');
+            }
+            else if(jarakIdGalery < WindowHeight - 200){
+                gallery.classList.add('navNow');
+                guestBook.classList.remove('navNow');
+                event.classList.remove('navNow');
+                couple.classList.remove('navNow');
+                story.classList.remove('navNow');
+                home.classList.remove('navNow');
+            }
+            else if(jarakIdEvent < WindowHeight -200){
+                event.classList.add('navNow');
+                guestBook.classList.remove('navNow');
+                gallery.classList.remove('navNow');
+                couple.classList.remove('navNow');
+                story.classList.remove('navNow');
+                home.classList.remove('navNow');
+            }
+            else if(jarakIdCouple < WindowHeight - 200){
+                couple.classList.add('navNow');
+                guestBook.classList.remove('navNow');
+                gallery.classList.remove('navNow');
+                event.classList.remove('navNow');
+                story.classList.remove('navNow');
+                home.classList.remove('navNow');
+            }
+            else if(jarakIdStory < WindowHeight -200){
+                story.classList.add('navNow');
+                guestBook.classList.remove('navNow');
+                gallery.classList.remove('navNow');
+                event.classList.remove('navNow');
+                couple.classList.remove('navNow');
+                home.classList.remove('navNow');
+            }
+            else if(jarakIdHome < WindowHeight - 200){
+                home.classList.add('navNow');
+                story.classList.remove('navNow');
+                guestBook.classList.remove('navNow');
+                gallery.classList.remove('navNow');
+                event.classList.remove('navNow');
+                couple.classList.remove('navNow');
+            }
+        }
+
+
+
+        function popUpHadiah(){
+            let popUp = document.querySelector('.popUpHadiah');
+            let body = document.querySelector('body');
+            popUp.classList.toggle('hiddenPopUp');
+            body.classList.toggle('overflowHidden');
+        }
+
+    </script>
+</body>
+</html>
