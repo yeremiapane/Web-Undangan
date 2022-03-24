@@ -542,12 +542,15 @@ body {
   padding: 0 3%;
 }
 .fitur section .box .icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #696871;
   margin: 5% auto;
+  font-size : 3rem;
+  color : coral;
 }
+
+.fitur section .box .icon .fa-solid .fa-paint-roller{
+  padding : 10px 7px;
+}
+
 .fitur section .box p {
   margin-top: 5%;
   color: #696871;
