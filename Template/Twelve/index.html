@@ -392,6 +392,29 @@
             body.classList.remove('overclosed');
         })
         
+        // GALLERY      
+        let imgGallery = document.querySelectorAll('.gallery .pict section img');
+        let countDelayTrantition = 0.2;
+        imgGallery.forEach(function(e){
+            e.style.transitionDelay = countDelayTrantition+'s';
+            if(countDelayTrantition==0.8){
+                countDelayTrantition=0;
+            }
+            countDelayTrantition+=0.2;
+        });
+        imgGallery.forEach(function(e){
+            window.addEventListener('scroll',function(){
+                let JarakImgGallery = e.getBoundingClientRect().top;
+                if(JarakImgGallery < WindowHeight-200){
+                    e.style.transform='scale(1)';
+                    e.style.opacity='1';
+                }
+                else if(JarakImgGallery > WindowHeight*1.5){
+                    e.style.transform='scale(0.6)';
+                    e.style.opacity='0';
+                }
+            })
+        });
 
         function animation(){
             
@@ -517,38 +540,16 @@
                 containerTime.style.opacity = '0';
                 containerTime.style.justifyContent = 'left';
             }
-            // GALLERY      
-            let imgGallery = document.querySelectorAll('.gallery .pict section img');
-            let countDelayTrantition = 0.2;
-            imgGallery.forEach(function(e){
-                e.style.transitionDelay = countDelayTrantition+'s';
-                if(countDelayTrantition==0.8){
-                    countDelayTrantition=0;
-                }
-                countDelayTrantition+=0.2;
-            });
-            imgGallery.forEach(function(e){
-                window.addEventListener('scroll',function(){
-                    let JarakImgGallery = e.getBoundingClientRect().top;
-                    if(JarakImgGallery < WindowHeight-200){
-                        e.style.transform='scale(1)';
-                        e.style.opacity='1';
-                    }
-                    else if(JarakImgGallery > WindowHeight*1.5){
-                        e.style.transform='scale(0.6)';
-                        e.style.opacity='0';
-                    }
-                })
-            });
+            
 
             // NAV BOTTOM
 
-            // let idGuestBook = document.getElementById('guest-book');
-            // let idGallery = document.getElementById('gallery');
-            // let idEvent = document.getElementById('event');
-            // let idCouple = document.getElementById('couple');
-            // let idStory = document.getElementById('story');
-            // let idHome = document.getElementById('home');
+            let idGuestBook = document.getElementById('guest-book');
+            let idGallery = document.getElementById('gallery');
+            let idEvent = document.getElementById('event');
+            let idCouple = document.getElementById('couple');
+            let idStory = document.getElementById('story');
+            let idHome = document.getElementById('home');
 
             let guestBook = document.querySelector('.navBottom .nav-item .Navguest-book');
             let gallery = document.querySelector('.navBottom .nav-item .Navgallery');
