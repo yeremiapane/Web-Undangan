@@ -1,0 +1,212 @@
+.section1 {
+    width: 100%;
+    position: relative;
+    padding: 3% 0 5% 0;
+  }
+  .section1 .info-prokes {
+    width: 100%;
+  }
+  .section1 .info-prokes .head {
+    width: 40%;
+    margin: 5% auto;
+    text-align: center;
+  }
+  .section1 .info-prokes .head h1 {
+    font-size: 40px;
+    margin-bottom: 7%;
+    font-family: Tangerine, cursive;
+  }
+  .section1 .info-prokes .head h4 {
+    margin: 2% auto;
+    width: 30%;
+    font-size: 17px;
+    border-bottom: 1px solid #000;
+    font-family: Quicksand, sans-serif;
+  }
+  .section1 .info-prokes .head p {
+    color: #212529;
+    font-family: Quicksand, sans-serif;
+  }
+  .section1 .info-prokes section {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .section1 .info-prokes section div {
+    width: 30%;
+    margin: 3%;
+    text-align: center;
+    color: #212529;
+    font-family: Quicksand, sans-serif;
+  }
+  .section1 .info-prokes section div img {
+    width: 70px;
+  }
+  
+  @media (max-width:800px){
+    .section1 .info-prokes .head{
+      margin: 3% auto;
+      width: 80%;
+      
+    }
+    .section1 .info-prokes .head h1{
+      font-size: 30px;
+    }
+    .section1 .info-prokes .head h4{
+      width: 50%;
+      margin-bottom: 10%;
+    }
+    .section1 .info-prokes .head p{
+      text-align: center;
+    }
+    .section1 .info-prokes section{
+      width: 100%;
+    }
+  }
+  
+  .couple{
+    width: 100%;
+    overflow-y: hidden;
+    margin-top: 5%;
+  }
+  .couple .head {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+  .couple .head .title {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    transition: 1s;
+  }
+  /* FADE - IN */
+  .couple .head .titleFadeIn{
+    top: 0 !important;
+    opacity: 1 !important;
+  }
+  /* FADE - IN */
+
+  .couple .head .title img {
+    width: 20%;
+  }
+  .couple .head .title h1 {
+    font-size: 30px;
+    font-family: "Satisfy", cursive;
+    color: #e29f72;
+    font-weight: 500;
+    margin: auto 5%;
+  }
+  .couple .head section {
+    margin-top: 5%;
+  }
+  .couple .head section p {
+    font-size: 15px;
+    margin-top: 5%;
+    color: #212529;
+    position: relative;
+    opacity: 0;
+    top: 100px;
+    transition: 2s;
+  }
+  /* FADE - IN */
+  .couple .head section .textFadeIn{
+    top: 0 !important;
+    opacity: 1 !important;
+  }
+  /* FADE - IN */
+  
+  .couple .profil {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10%;
+    overflow-x: hidden;
+  }
+  .couple .profil div {
+    width: 30%;
+    font-family: Quicksand, sans-serif;
+    text-align: center;
+    transition: 1s;
+  }
+  .couple .profil .man {
+    position: relative;
+    left: -250px;
+    top: -100px;
+    opacity: 0;
+  }
+  /* FADE - IN */
+  .couple .profil .manFadeIn{
+    top: 0 !important;
+    left: 0 !important;
+    opacity: 1 !important;
+  }
+  /* FADE - IN */
+
+  .couple .profil .woman {
+    position: relative;
+    right: -250px;
+    top: -100px;
+    opacity: 0;
+  }
+  /* FADE - IN */
+  .couple .profil .woManFadeIn{
+    top: 0 !important;
+    right: 0 !important;
+    opacity: 1 !important;
+  }
+  /* FADE - IN */
+  .couple .profil div img {
+    width: 60%;
+    border-radius: 5%;
+  }
+  .couple .profil div h1 {
+    margin: 5% 0;
+    color: #e29f72;
+    font-family: "Satisfy", cursive;
+  }
+  .couple .profil div h2 {
+    margin-bottom: 10%;
+  }
+  .couple .profil div p {
+    margin-bottom: 5%;
+  }
+  .couple .profil div .orangeColor{
+    color: #e29f72;
+  }
+  
+  @media (max-width:900px){
+    
+  }
+  
+  @media (max-width:800px){
+    .couple .head{
+      margin: 50px auto;
+      width: 80%;
+    }
+    .couple .head .title img{
+      width: 150px;
+    }
+    .couple .head .title h1{
+      font-size: 30px;
+    }
+    .couple .head section{
+      margin-top: 15%;
+    }
+    .couple .profil{
+      flex-direction: column;
+      padding-bottom: 40%;
+    }
+    .couple .profil div{
+      margin-top: 10%;
+      width: 100%;
+    }
+  }
+  
