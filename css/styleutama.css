@@ -791,70 +791,45 @@ body {
 /* TEMA */
 
 /* TESTIMONI */
-.testimoni {
-  width: 100%;
-  margin-top: 15%;
+.carousel-indicators{
+  position: relative;
+  
 }
-.testimoni .head {
-  width: 100%;
-}
-.testimoni .head h1 {
-  font-size: 55px;
-  width: 35%;
-  text-align: center;
+
+.items{
+  max-width: 800px;
   margin: auto;
 }
 
-.testimoni .list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 10%;
-  padding: 0 5%;
-}
-.testimoni .list .box {
-  width: 350px;
-  background: #f7f7f7;
-  border: 1px solid #ced4da;
-  border-radius: 15px;
-  padding: 2%;
-  margin: 1% 2%;
-}
-.testimoni .list .box .profil {
-  display: flex;
-}
-.testimoni .list .box .profil .icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid green;
-  margin-right: 5%;
-}
-.testimoni .list .box .text {
-  margin-top: 5%;
-}
-.testimoni .list .box .text p {
-  font-size: 20px;
-  color: #696871;
-}
-.testimoni .list a {
-  margin-top: 10%;
-  color: #5454d4;
-  font-weight: 600;
+.items img{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
+  
 }
 
-@media (max-width: 900px) {
-  .testimoni .head h1 {
-    width: 50%;
-    font-size: 40px;
-  }
+.stars{
+  color: red;
+  margin-bottom: 1rem
 }
-@media (max-width: 450px) {
-  .testimoni .head h1 {
-    width: 100%;
-    font-size: 35px;
-  }
+
+.carousel-indicators [data-bs-target]{
+  background: red;
+  border-radius: 100%;
+  width: 20px;
+  height: 1px;
+  margin-top: 2rem;
+}
+
+i.bi.bi-arrow-left-circle {
+  font-size: 2rem;
+  color: red;
+}
+i.bi.bi-arrow-right-circle {
+  font-size: 2rem;
+  color: red;
 }
 /* TESTIMONI */
 
